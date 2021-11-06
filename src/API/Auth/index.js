@@ -76,7 +76,7 @@ Router.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     return res.redirect(
-      `http://localhost:3000/google/${req.session.passport.user.token}`
+      `https://zomato-clone-netlify.netlify.app/google/${req.session.passport.user.token}`
     );
   }
 );
